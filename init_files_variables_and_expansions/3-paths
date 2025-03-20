@@ -1,2 +1,5 @@
 #!/bin/bash
-ls | wc -l
+count=$(echo "$PATH" | awk -F':' '{print NF}')
+echo "$count"
+
+
