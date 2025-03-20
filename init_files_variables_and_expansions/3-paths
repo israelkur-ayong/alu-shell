@@ -1,5 +1,5 @@
 #!/bin/bash
-count=$(echo "$PATH" | awk -F':' '{print NF}')
+count=$(echo "$PATH" | grep -o ':' | wc -l)
+count=$((count + 1))  
 echo "$count"
-
 
