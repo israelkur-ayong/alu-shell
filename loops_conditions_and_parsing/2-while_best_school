@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+#while Loop
+i=0
+while [[ $i -lt 10 ]]
+do
+	printf "Best School\n"
+	((i++))
+done
