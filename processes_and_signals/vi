@@ -1,0 +1,7 @@
+#!/bin/bash
+read -p "type in commit message same as file name" message
+chmod u+x $message
+git add .
+git commit -m "$message"
+git push
+
