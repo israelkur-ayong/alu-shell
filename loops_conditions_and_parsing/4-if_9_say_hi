@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+#loops and ifs
+i=0
+while [ $i -lt 10 ]
+do
+if [ $i -eq 9 ]
+then 
+printf "Hi\n"
+fi
+printf "Best School\n"
+((i++))
+done
