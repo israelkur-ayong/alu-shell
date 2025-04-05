@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# FizzBuzz implementation
+
+m=1
+while [ $m -le 100 ]; do
+    if (( m % 3 == 0 && m % 5 == 0 )); then
+        echo "FizzBuzz"
+    elif (( m % 3 == 0 )); then
+        echo "Fizz"
+    elif (( m % 5 == 0 )); then
+        echo "Buzz"
+    else
+        echo "$m"
+    fi
+    ((m++))
+done
